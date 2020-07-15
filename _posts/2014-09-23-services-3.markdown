@@ -1,0 +1,8 @@
+---
+layout: default
+img: shirt3.png
+category: Services
+title: Bumble the Elephant
+description: |
+---
+Bumble the humble elephant is your shinning star. He will always remember who you are and why you are here.
