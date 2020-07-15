@@ -6,16 +6,19 @@ header:
 
 services:
     title: "What We Offer"
-    text: "Lorem ipsum"
+    text: "We respect Social Distancing and practice limited group sizes"
     section: services
     list:
-      - title: "After School Clubs "
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      - title: "After School Club"
+        desc: "Closes at 3PM - 6.30PM"
         icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
-      - title: "Nutritious Meals"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      - title: "Breakfast Club"
+        desc: "Opens 7AM - 9AM"
         icon: fas fa-laptop       
-      - title: "Indoor/Outdoor Activities"
+      - title: "Holiday Club"
+        desc: "Your description here, full **Markdown** support"
+        icon: fab fa-markdown
+      - title: "Homework & Reading Club"
         desc: "Your description here, full **Markdown** support"
         icon: fab fa-markdown
 
@@ -115,8 +118,10 @@ team:
           
 contact:
     title: "Contact Us"
-    text: "To find out more, call us on 123456789"
+    text: "To find out more, call us on 07546 143 879"
     map_text: "Where to find us"
+    info_text: "The Downswood Community Center"
+    location_text: "Chiltern Close, Downswood, Maidstone, ME15 8XG"
     section: contact
     
 footer:
