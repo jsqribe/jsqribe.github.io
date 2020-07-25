@@ -1,53 +1,56 @@
 <!-- Services -->
   <section class="page-section" id="{{ site.data.sitetext.services.section | default: "services" }}">
     
-    <div class="container text-center">
-          
-      <h2 class="section-heading text-uppercase">{{ site.data.sitetext.services.title | default: "Services" }}</h2>
+    <div class="container">
+      
+      <div class="row">
+         <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">{{ site.data.sitetext.services.title | default: "Services" }}</h2>
 
-      {% if site.data.sitetext.services.text %}
-        <div class="alert alert-success alert-dismissible fade show" role="alert">
-          <strong>{{ site.data.sitetext.services.text }}</strong>
-          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-      {% endif %}
+            {% if site.data.sitetext.services.text %}
+              <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong>{{ site.data.sitetext.services.text }}</strong>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+            {% endif %}
 
-      <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselIndicators" data-slide-to="2"></li>
-        </ol>
+            <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselIndicators" data-slide-to="2"></li>
+              </ol>
 
-        <div class="carousel-inner">
-        {% for service in site.data.sitetext.services.list %}  
+              <div class="carousel-inner">
+              {% for service in site.data.sitetext.services.list %}  
 
-          <div class="carousel-item {{service.active}}">
+                <div class="carousel-item {{service.active}}">
 
-            <img class="d-block w-100" src="{{ service.image }}" alt="{{ service.title }}">
+                  <img class="d-block w-100" src="{{ service.image }}" alt="{{ service.title }}">
 
-            <div class="carousel-caption d-none d-md-block bg-dark mb-4">
-              <h4>{{ service.title }}</h4>
-              {% if service.desc %}<p>{{ service.desc }}</p>{% endif %}
-            </div>
+                  <div class="carousel-caption d-none d-md-block bg-dark mb-4">
+                    <h4>{{ service.title }}</h4>
+                    {% if service.desc %}<p>{{ service.desc }}</p>{% endif %}
+                  </div>
 
+                </div>
+
+              {% endfor %}  
+              </div>
+
+              <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>  
           </div>
-
-        {% endfor %}  
-        </div>
-
-        <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-
+          </div>
     </div>
 </section>
 <!-- End Services -->
