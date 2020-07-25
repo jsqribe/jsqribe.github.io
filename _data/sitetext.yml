@@ -85,7 +85,7 @@ team:
             icon: fab fa-linkedin-in
           
 contact:
-    title: "Contact Details"
+    title: "Contact US"
     list:
       - title: "Number"
         desc: "07546143879"
@@ -94,7 +94,7 @@ contact:
         desc: "info@tipeeandtwinkletoes.co.uk"
         icon: fas fa-envelope 
 
-    map_text: "Find us"
+    map_text: "Where To Find Us"
     info_text: "The Downswood Community Center"
     location_text: "Chiltern Close, Downswood, Maidstone, ME15 8XG"
     section: contact
