@@ -28,7 +28,7 @@
 
                 <div class="carousel-item {{service.active}}">
 
-                  <img class="d-block w-100" src="{{ service.image }}" alt="{{ service.title }}">
+                  <img class="d-block w-100 img-responsive" src="{{ service.image }}" alt="{{ service.title }}">
 
                   <div class="carousel-caption d-none d-md-block bg-dark mb-4">
                     <h4>{{ service.title }}</h4>
@@ -50,7 +50,58 @@
               </a>
             </div>  
           </div>
+
+          <div class="row text-center"
+          >  
+            <div class="card-deck">
+              {% for service in site.data.sitetext.services.list %}
+              <div class="card p-3 text-center">
+                <img class="img-responsive card-img-top" src="{{ service.image }}" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">{{ service.title | markdownify }}</h4>
+                  <p class="card-text">{{ service.desc | markdownify }}</p>
+                  <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#{{ service.modal_id }}Modal">More Info</button>
+                </div>
+              </div>
+
+                <!-- Modal -->
+              <div class="modal fade" id="{{ service.modal_id }}Modal" tabindex="-1" role="dialog" aria-labelledby="{{ service.modal_id }}ModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="{{ service.modal_id }}ModalLabel">{{ service.title }}</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img class="img-responsive card-img-top" src="{{ service.image }}" alt="{{ service.title }}">
+                      {%- if service.modal_text -%} 
+                        <p>"{{service.modal_text}}"</p>
+                      {%- endif -%}
+                      <a class="btn btn-outline-info js-scroll-trigger" href="#contact" onclick="ModalRedirect()">Book Now</a>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                      <script>
+                        function ModalRedirect() {
+                          $('.modal').hide();
+                          $(document.body).removeClass("modal-open");
+                          $('.modal-backdrop').remove();
+                          $(location).attr('href',"#contact");
+                        }
+                        </script>
+                    </div>
+                  </div>
+                </div>
+              </div>   
+              {% endfor %}
+            </div>
+
+            
           </div>
+
+        </div>
     </div>
 </section>
 <!-- End Services -->

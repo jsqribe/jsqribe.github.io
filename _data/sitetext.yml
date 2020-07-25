@@ -13,18 +13,26 @@ services:
         desc: "Available from 3pm - 6:30pm every weekday"
         image: assets/img/services/outdoor.jpg
         active: "active"
+        modal_id: "AFS"
+        modal_text: Available from 3pm - 6:30pm every weekday
       - title: "Breakfast Club"
         desc: "Available from 7am - 9am every weekday"
         image: assets/img/services/breakfast.jpg    
         active: ""
+        modal_id: "BFS"
+        modal_text: Available from 7am - 9am every weekday
       - title: "Holiday Club"
-        desc: "Contact us for time and more information"
+        desc: "Contact us for times and more information"
         image: assets/img/services/holiday.jpg
         active: ""
-      - title: "Homework & Reading Club"
+        modal_text: Contact us for times and more information
+        modal_id: "HolidayClub"
+      - title: "Homework Club"
         desc: "Available from 3pm - 6:30PM every day"
         image: assets/img/services/homework.jpg
         active: ""
+        modal_id: "HomeworkClub"
+        modal_text: Available from 3pm - 6:30PM every day
 
 clients:
     section: clients
