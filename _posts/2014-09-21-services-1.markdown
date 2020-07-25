@@ -1,8 +1,0 @@
----
-layout: default
-img: shirt1.png
-category: Services
-title: Sacha the Deer
-description: |
----
-  Sacha’s elegant antlers have never been seen on such a beautiful t-shirt. Wear this majestic beast and feel all your problems float away.

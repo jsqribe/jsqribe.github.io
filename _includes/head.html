@@ -21,7 +21,7 @@
   <title>{% if page.title %}{{ page.title | append: " | " | append: site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <!-- Custom fonts for this template -->
   <link href="assets/css/all.min.css" rel="stylesheet" type="text/css">
@@ -33,6 +33,10 @@
   <!-- Custom styles for this theme -->
   <!--<link href="assets/css/agency.min.css" rel="stylesheet">-->
   <link href="assets/css/agency.css" rel="stylesheet">
+
+  <!-- Custom header JS for this theme -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/cookie-bar/cookiebar-latest.min.js?theme=flying"></script>
+  <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
   
   <!-- Page container change top padding when nav shrinks -->
   {% if page.layout == "page" %}

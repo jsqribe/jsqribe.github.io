@@ -2,13 +2,46 @@
   <section class="py-5" id="{{ site.data.sitetext.clients.section | default: "clients" }}">
     <div class="container">
       <div class="row" {% if site.data.sitetext.clients.horizontal-scrolling == "yes" %} id="scrolling-clients" {% endif %}>
+
 	  {% for client in site.data.sitetext.clients.list %}
         <div class="col-md-3 col-sm-6">
-          <a href="{{ client.url }}">
-            <img class="img-fluid d-block mx-auto" src="{{ client.logo }}" alt="{{ client.title }}" style="max-height: {{ site.data.sitetext.clients.max-height | default: "100px" }}">
-          </a>
+              <!-- Button trigger modal -->
+              
+            <button type="button" class="btn btn-outline-light" data-toggle="modal" data-target="#{{ client.modal_id }}Modal">
+              <img class="img-fluid d-block mx-auto" src="{{ client.logo }}" alt="{{ client.title }}" style="max-height: {{ site.data.sitetext.clients.max-height | default: "100px" }}">
+            </button>
+ 
+              <!-- Modal -->
+            <div class="modal fade" id="{{ client.modal_id }}Modal" tabindex="-1" role="dialog" aria-labelledby="{{ client.modal_id }}ModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">{{ client.title }}</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <img class="img-fluid d-block mx-auto" src="{{ client.logo }}" alt="{{ client.title }}" style="max-height: {{ site.data.sitetext.clients.max-height | default: "100px" }}">
+                    {%- if client.modal_text -%} 
+                      <p>"{{client.modal_text}}"</p>
+                    {%- endif -%}
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>     
+       
         </div>
 	  {% endfor %}
       </div>
     </div>
+
+
+
+
+
+
   </section>

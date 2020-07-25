@@ -1,5 +1,17 @@
 // Styling for the services section
-.service-heading {
-  margin: 15px 0;
-  text-transform: none;
-}
+section#services { 
+  background-color: #ADC9CB;
+  .section-heading {
+    color: rgba(49, 36, 15, 0.822);
+  }
+  .carousel-caption {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+  .d-block{
+      width: 100%;
+      height: 25vw;
+      object-fit: cover;
+  }
+}  
