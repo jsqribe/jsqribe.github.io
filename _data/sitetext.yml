@@ -61,9 +61,9 @@ team:
     subtext: Get in touch with us if you would like more information.
     section: team
     people:
-      - name: "Kay Garland"
-        role: "Lead Tutor"
-        image: assets/img/team/500x500.jpg
+      - name: "Carla Bourner"
+        role: "Assistant Manager"
+        image: assets/img/team/3.png
         social:
           - url: https://twitter.com
             icon: fab fa-twitter
