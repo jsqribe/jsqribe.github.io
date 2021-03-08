@@ -1,32 +1,52 @@
 header:
-    title: Welcome to Tipee&TwinkleToes!
-    text: It's Nice To Meet You
+    title: "At Tipee &amp; Twinkletoes After School Club we aim to provide a safe, secure and relaxed
+            environment that offers a wide range of activities to reflect the interests of the children in
+            our care. We aim to deliver new experiences, strengthen friendships and build lasting
+            memories that support the development of all children who attend."
+    text: 
     button: Tell Me More
     buttonlink: "#services"
 
 services:
-    title: "What We Offer"
+    title: "Wrap Around Care Facilities - What We Offer"
     text: "COVID NOTICE : We respect Social Distancing and practice limited group sizes for all our services."
     section: services
     list:
+
       - title: "After School Club"
         desc: "Available from 3pm - 6:30pm every weekday"
         image: assets/img/services/outdoor.jpg
         active: "active"
         modal_id: "AFS"
-        modal_text: Available from 3pm - 6:30pm every weekday
+        modal_text: "After School Club runs from 3.00pm to 6.30pm and offers children a wide range of activities.
+                    These include role play, outdoor sports, various crafts, board games, construction, physical
+                    play, cookery, and a quiet time for reading and homework. The children are expected to
+                    participate in all aspects of the club, preparing snacks, tidying up and supporting each other,
+                    where necessary, in order to develop independence. The children will be given access to
+                    indoor and outdoor play, subject to weather conditions, seasonal time adjustments etc., so
+                    please ensure they bring appropriate outdoor clothing.
+                    We follow healthy eating guidelines and provide a variety of healthy snacks using fresh fruit
+                    and vegetables, as well as a hot snack, such as soup or pasta, later in the session. Fresh
+                    drinking water is available at all times. We attempt to meet individual dietary requirements
+                    wherever possible. The food we provide at the Club is not intended as a substitute for a
+                    main evening meal."
+
       - title: "Breakfast Club"
         desc: "Available from 7am - 9am every weekday"
         image: assets/img/services/breakfast.jpg    
         active: ""
         modal_id: "BFS"
-        modal_text: Available from 7am - 9am every weekday
+        modal_text: "Breakfast Club operates between 7.00am and 9.00am. Children are able to enjoy a healthy
+                    breakfast of their choice in a relaxed environment, and engage in a range of activities with
+                    their friends before setting off to school."
+      
       - title: "Holiday Club"
         desc: "Contact us for times and more information"
         image: assets/img/services/holiday.jpg
         active: ""
         modal_text: Contact us for times and more information
         modal_id: "HolidayClub"
+      
       - title: "Homework Club"
         desc: "Available from 3pm - 6:30PM every day"
         image: assets/img/services/homework.jpg
@@ -43,12 +63,14 @@ clients:
         url: https://github.com/raviriley/agency-jekyll-theme
         logo: assets/img/clients/ofsted.jpg
         modal_id: "Ofsted"
-        modal_text: 
+        modal_text:
+
       - title: "Food Standards"
         url: https://github.com/raviriley/agency-jekyll-theme
         logo: assets/img/clients/foodstandards.png
         modal_id: "FoodStandards"
-        modal_text: 
+        modal_text:
+        
       - title: "Early Years Foundation Stage"
         url: https://github.com/raviriley/agency-jekyll-theme
         logo: assets/img/clients/EYFS.png 
@@ -58,7 +80,10 @@ clients:
 team:
     title: "OUR AMAZING TEAM"
     text: ""
-    subtext: Get in touch with us if you would like more information.
+    subtext: Tipee &amp; Twinkletoes Childcare is staffed by Positive play workers. All staff members are DBS
+            checked, and have experience of working with children and undertake professional
+            development training. Our staffing ratios are in-line with best practice recommendations.
+            If you have a query or concern at any time, please speak to a member of staff at the setting.
     section: team
     people:
       - name: "Chloe Minney"
